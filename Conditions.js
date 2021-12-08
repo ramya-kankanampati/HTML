@@ -62,7 +62,7 @@ document.getElementById("demo").innerHTML = greeting;
 
 <script>
 let day;
-switch (new Date().getDay()) {
+switch (new Date().getDay()) 
   case 0:
     day = "Sunday";
     break;
@@ -83,7 +83,7 @@ switch (new Date().getDay()) {
     break;
   case  6:
     day = "Saturday";
-}
+
 document.getElementById("demo").innerHTML = "Today is " + day;
 </script>
 
