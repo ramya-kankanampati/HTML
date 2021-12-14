@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+
+         table {
+            border-collapse: collapse; 
+         border:1px black;  
+           width: 20%;
+           nav-down: left;
+    
+         }
+         
+         td, th {
+           border: 1px solid black;
+           text-align: center;
+           text-align: auto;
+           text-align: auto;
+           padding: 15px;
+         } 
+         </style>    
+    <title>add</title>
+</head>
+<body>
+        <button type="button" class="btn btn-light" onclick="myFunction()">Add</button>
+    </div>
+    <div class="container">
+    <table class="table" >
+        <br><br>
+        <thead>
+          <tr>
+            <th>StudentName</th>
+            <th>StudentAge</th>
+            <th>StudentHeight</th>
+          </tr>
+        </thead>
+        <tbody id="add">
+
+        </tbody>  
+    </table>
+    </div>
+    <script>
+        function myFunction() {
+          let sname = prompt("Student Name")
+          let sage = prompt("Student Age")
+          let sheight = prompt("Student Height")
+          let tr = document.createElement("tr");
+          let td1 = document.createElement("td");
+          let td2 = document.createElement("td");
+          let td3 = document.createElement("td");
+          let sn = document.createTextNode(`${sname}`);
+          let sa = document.createTextNode(`${sage}`);
+          let sh = document.createTextNode(`${sheight}`);
+          td1.appendChild(sn);
+          td2.appendChild(sa);
+          td3.appendChild(sh);
+          tr.appendChild(td1);
+          tr.appendChild(td2);
+          tr.appendChild(td3);
+          document.getElementById("add").appendChild(tr);
+        }
+    </script>
+</body>
+</html>

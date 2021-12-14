@@ -1,0 +1,46 @@
+<!-- <div class="content-wrapper">
+    <div id="userinput">
+        <form id="Gridform">
+            <input type="text" class="e-input" id="multiplier" placeholder="Enter number 1-9" />
+            <button id="submit">Submit</button>
+        </form>
+    </div>
+    <div id="mtable" style="display:none">
+        <button id="close">Close</button>
+        <div id="Grid">
+        </div>
+    </div>
+</div> -->
+
+
+
+
+<table id="displaytable" style="display.none">
+    <tr>
+    <th> Name</th>
+    <th>Id</th>
+    </tr>
+    <tr>
+    <td>Washington</td>
+    <td>111</td>
+    </tr>
+    <tr>
+    <td>aaa</td>
+    <td>222</td>
+    </tr>
+    </table>
+    <input type="button" value="Submit" class="btn" onclick='javascript:myfunction(); '/>
+
+
+    
+    <script type="text/javascript">
+    function myfunction()
+    {
+        var value=document.getElementById("displaytable").value;
+        if(value!=null)
+        {
+            value.css.style.display=block;
+        }
+    }
+    </script>
+    

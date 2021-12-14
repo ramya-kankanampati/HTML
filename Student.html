@@ -1,12 +1,12 @@
-<!DOCTYPE>  
+<!DOCTYPE html>  
 <html>    
 <head>  
 <style>    
 table, th, td {    
-border: 1px solid black;  
-margin-left:2px;  
-margin-right: auto;  
- /* border-collapse: collapse; */
+ border: 1px solid black;   
+margin-left:2px;   
+ margin-right: 3px;   
+ /* border-collapse: collapse;  */
 width: 500px;  
 text-align: center;  
 font-size: 20px;  
@@ -14,7 +14,7 @@ font-size: 20px;
 </style>    
 </head>  
 <body>    
-<table>    
+ <table>    
 <tr>  
 <th>First_Name</th>  
 <th>Last_Name</th>  
@@ -23,22 +23,37 @@ font-size: 20px;
 </tr>    
 <tr>  
 <td>Ramya</td>
-<td>Kankanampati</td>
+<td>Aaa</td>
 <td>M1</td>
 <td>65</td>  
 </tr>    
 <tr>  
 <td>Asha</td>
-<td>Kankanampati</td>
+<td>Bbb</td>
 <td>M2</td>
 <td>80</td>  
 </tr>    
 <tr>  
 <td>Aruna</td>
-<td>Challagunda</td>
+<td>Ccc</td>
 <td>M3</td>
 <td>75</td>  
 </tr>    
-</table>    
-</body>  
-</html>     
+</table>
+<br> <br>
+<input type="button" value="Submit"/>
+<button onclick="myFunction()"> OnClick </button>  
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo1").innerHTML = "Hi I Am Ramya";
+  document.getElementById("demo2").innerHTML ="Hi I Am Aruna";
+  
+}
+</script>
+
+</body>
+</html>

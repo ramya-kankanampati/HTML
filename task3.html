@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<style>
+table {
+   border-collapse: collapse; 
+  /* border:1px black;  */
+  width: 20%;
+}
+
+td, th {
+  border: 1px solid black;
+  text-align: center;
+  text-align: auto;
+  text-align: auto;
+  padding: 5px;
+}
+
+
+</style>
+<body>
+
+<h1>ON CLICK BUTTON </h1>
+<button onclick="myFunction()">Click me</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  let a='<table>\
+  <tr>\
+    <th>Name</th>\
+    <th>Age</th>\
+    <th>height</th>\
+  </tr>\
+  <tr>\
+    <td>Ramya</td>\
+    <td>20</td>\
+    <td>4.2</td>\
+  </tr>\
+  <tr>\
+    <td>Asha</td>\
+    <td>21</td>\
+    <td>4.3</td>\
+  </tr>\
+  <tr>\
+    <td>Aruna</td>\
+    <td>22</td>\
+    <td>4.3</td>\
+  </tr>\
+  <tr>\
+    <td>Teja</td>\
+    <td>25</td>\
+    <td>5.0</td>\
+  </tr>\
+  <tr>\
+    <td>vamsi</td>\
+    <td>24</td>\
+    <td>5.1</td>\
+  </tr>\
+  <tr>\
+    <td>uma</td>\
+    <td>26</td>\
+    <td>5.3</td>\
+  </tr>\
+</table>\
+';
+document.getElementById("demo").innerHTML=a;
+
+}
+</script>
+<input type="button" value="Submit"/>
+
+</body>
+</html>
+
